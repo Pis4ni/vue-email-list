@@ -24,7 +24,7 @@
 
         <div class="wrapper" id="app">
             <!-- lista delle mail -->
-            <div class="list-group">            
+            <div class="list-group" v-if="mails.length == 10">            
                <!-- stampo un elemento per ogni elemento nell array delle mail -->
                 <a href="#" class="list-group-item list-group-item-action list-group-item-light" v-for="(mail,index) in mails">{{mails[index]}}</a>
                
